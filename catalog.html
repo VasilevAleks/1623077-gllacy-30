@@ -46,164 +46,166 @@
         </div>
     </header>
     <main>
-      <section class="slider">
-        <ul class="slider-list">
-          <li class="slider-item slide">
-            <h2 class="slide-title">
-              Крем-брюле и пломбир с малиновым джемом
-            </h2>
-            <a class="button slide-button" href="#">
-              Давайте оба!
-            </a>
-          </li>
-          <li class="slider-item slide">
-            <h2 class="slide-title">
-              Шоколадный пломбир и лимонный сорбет
-            </h2>
-            <a class="button slide-button" href="#">
-              Давайте оба!
-            </a>
-          </li>
-          <li class="slider-item slide slide-current">
-            <h2 class="slide-title">
-              Пломбир с помадкой и клубничный щербет
-            </h2>
-            <a class="button slide-button" href="#">
-              Давайте оба!
-            </a>
-          </li>
-        </ul>
-        <div class="slider-controls">
-          <button type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button class="current" type="button" aria-label="Третий слайд"></button>
-        </div>
+      <h1>Сливочное мороженое</h1>
+      <ul class="route">
+        <li>
+          <a href="catalog.html">Главная</a>
+        </li>
+        <li>
+          <a href="№">Каталог</a>
+        </li>
+        <li class="route-current">Сливочное</li>
+      </ul>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="choice" placeholder="по популярности">
+            <option value="pop">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fat">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Цена:</legend>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price">
+                 <input type="text" name="min-price" value="100">
+              </label>
+              <label class="max-price">
+                 <input type="text" name="max-price" value="500">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li class="filter-radio">
+              <input class="filter-input" type="radio" name="content" id="filter-zero">
+              <label for="filter-zero">0%</label>
+            </li>
+            <li class="filter-radio">
+              <input class=" filter-input" type="radio" name="content" id="filter-low-ten" checked>
+              <label for="filter-low-ten">до 10%</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="filter-input" type="radio" name="content" id="filter-low-thirty">
+              <label for="filter-low-thirty">до 30%</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="filter-input" type="radio" name="content" id="filter-hi-thirty">
+              <label for="filter-hi-thirty">свыше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="filler" id="filter-choco" checked>
+              <label for="filter-choco">шоколадные</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="filler" id="filter-sugar" checked>
+              <label for="filter-sugar">сахарные присыпки</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="filler" id="filter-fruit">
+              <label for="filter-fruit">фрукты</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="filler" id="filter-syrup">
+              <label for="filter-syrup">сиропы</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="filler" id="filter-jam">
+              <label for="filter-jam">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button>Применить</button>
       </section>
-      <section class="Free">
-        <div class="raspberries">
-          <h2>
-           Малинка даром!
-          </h2>
-          <p>
-           При покупке 2кг любого фруктового мороженного, добавим<br>
-            в ваш заказ банку малинового варенья бесплатно.
-          </p>
-          <a class="button rasp-button">
-            Хочу варенье!
-          </a>
-        </div>
-        <div class="chocolate">
-          <h2>
-            Шоколадки даром!
-          </h2>
-          <p>
-            При покупке 2кг пломбира, добавим в ваш заказ упаковку<br>
-            вкуснейшей шоколадной присыпки совершенно бесплатно.
-          </p>
-          <a class="button choco-button">
-            Хочу шоколадки!
-          </a>
-        </div>
-      </section>
-      <section class="top">
+      <section class="catalog">
         <ul class="top-list">
           <li class="item-of-top">
-            <h2 class="name-of-item">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</h2>
+            <img>
             <p class="price">310 &#8381; <span class="kg">/кг</span></p>
-            <img>
-            <span>Hit</span>
+            <h2 class="name-of-item">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</h2>
           </li>
           <li class="item-of-top">
-            <h2 class="name-of-item">Сливочно-кофейное с кусочками<br>шоколада</h2>
+            <img>
             <p class="price">380 &#8381; <span class="kg">/кг</span></p>
-            <img>
-            <span>Hit</span>
+            <h2 class="name-of-item">Сливочно-кофейное с кусочками<br>шоколада</h2>
           </li>
           <li class="item-of-top">
-            <h2 class="name-of-item">Сливочно-клубничное<br>с присыпкой из белого шоколада</h2>
+            <img>
             <p class="price">355 &#8381; <span class="kg">/кг</span></p>
-            <img>
-            <span>Hit</span>
+            <h2 class="name-of-item">Сливочно-клубничное<br>с присыпкой из белого шоколада</h2>
           </li>
           <li class="item-of-top">
-            <h2 class="name-of-item">Сливочное крем-брюле<br>с карамельной подливкой</h2>
-            <p class="price">415 &#8381; <span class="kg">/кг</span></p>
             <img>
-            <span>Hit</span>
+            <p class="price">415 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочное крем-брюле<br>с карамельной подливкой</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">325 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочное с брусничным<br>джемом</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">410&#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочно-черничное с цельными<br>дягодами черники</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">315 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочно-лимонное с<br>карамельной присыпкой</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">320 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочное с шоколадной<br>стружкой</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">440 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочно-ванильное<br>с кусочками шоколада</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">435 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочное с ментоловым<br>сиропом</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">355 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочное с кусочками черного<br>шоколада</h2>
+          </li>
+          <li class="item-of-top">
+            <img>
+            <p class="price">420 &#8381; <span class="kg">/кг</span></p>
+            <h2 class="name-of-item">Сливочное с мятным сиропом</h2>
           </li>
         </ul>
-      </section>
-      <section class="about">
-        <ul class="about-list">
-          <li class="about-item">
-            Все наше мороженое изготавливается на собственном<br>
-            производстве, с использованием совеременного оборудования<br>
-            и проверенных временем технологий.
-          </li>
-          <li class="about-item">
-            Для приготовления мороженого используются настоящие<br>
-            сливки и молоко высочайшего качаства. Все дополнительные<br>
-            ингридиенты и добавки произведены из натуралььного,<br>
-            экологически чистого сырья.
-          </li>
-          <li class="about-item">
-            Закупка ингридиентов производится только у проверенных<br>
-            фермерских хозяйств и компаний, с которыми нас связывает<br>
-            долговременное сотрудничество.
-          </li>
-          <li class="about-item">
-            Доставка нашего мороженого до заказчиков осуществляяется<br>
-            в специальном темопаке, который не дает мороженому<br>
-            растаять в пути и позволяет сохранить превосхоный вкус.
-          </li>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item pagination-item-current"><a>2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
         </ul>
       </section>
-      <div class= "advertising">
-        <article class="blog">
-          <h3 class="news">
-            <a class="open-blog" href="#">
-              10 способов сервировки фруктовых щербетов к столу
-            </a>
-          </h3>
-          <p class="new-in-blog">
-            Новое в нашем блоге
-          </p>
-        </article>
-        <div class="mailing">
-          <label class="mailing-form">
-            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
-            всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
-            и не слать всякой ненужной ерунды. Честно =)
-            <input id="mail-adress" type="text" placeholder="email@example.com">
-          </label>
-          <button class="button" type="button">Отправить</button>
-       </div>
-      </div>
-       <section>
-         <div class="modal-map">
-          <h2 class="visually-hidden">Как до нас добраться</h2>
-          <iframe></iframe>
-        </div>
-        <div class="location">
-          <address>
-              <p>Адрес главного офиса<br>
-              и офлайн-магазина:
-              </p>
-              <p>
-                ул. Большая Конюшенная,<br>
-                19/8, Санкт-Петербург
-              </p>
-          </address>
-          <div class= "contacts-form">
-              <h3> Для заказов по телефону:</h3>
-              <p>
-                Тел: <a href="tel:+78124502525">8 812 450-25-25</a>
-              </p>
-              <p>(с 10 до 20 ежедневно)</p>
-          </div>
-          <button class="button form" type="button">Форма обратной связи</button>
-        </div>
-       </section>
     </main>
     <footer>
       <section class= "footer-network">
